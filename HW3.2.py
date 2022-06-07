@@ -2,12 +2,13 @@
 a = float(input('Введите число:'))
 b = float(input('Введите число:'))
 c = float(input('Введите число:'))
-sr = (a + b + c) / 3
-print(f'Среднее значение {sr}')
+sum = a + b + c
 min_number = min(a, b, c)
 print(f'Минимальное значение {min_number}')
 max_number = max(a, b, c)
 print(f'Максимальное значение {max_number}')
+sr = sum - min_number - max_number
+print(f'Среднее значение {sr}')
 if min_number > 1 and min_number % 2 == 0:
     print(f'{min_number}')
 else:
